@@ -69,13 +69,13 @@ jobs:
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
         task-definition: ecs-task-definition.json
-        container-name: sctp-cloud-infra 
+        container-name: hs-taskdef
         image: ${{ steps.build-image.outputs.image }}
 
     - name: Deploy Amazon ECS task definition
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: hs-taskdef #change
+        service: hs-ecs #change
         cluster: hongsheng-cluster-sandboxvpc #change
         wait-for-service-stability: true
