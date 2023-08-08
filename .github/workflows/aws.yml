@@ -76,6 +76,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: hs-ecs-service1 #change
+        service: hs-taskdef #change
         cluster: hongsheng-cluster-sandboxvpc #change
         wait-for-service-stability: true
