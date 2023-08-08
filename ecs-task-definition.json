@@ -1,11 +1,11 @@
 {
-    "family": "hs-taskdef:1",
+    "family": "hs-taskdef",
     "executionRoleArn": "arn:aws:iam::255945442255:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "containerDefinitions": [
         {
-            "name": "hs-taskdef:1",
-            "image": "255945442255.dkr.ecr.ap-southeast-1.amazonaws.com/hs-taskdef:1:latest",
+            "name": "hs-taskdef",
+            "image": "255945442255.dkr.ecr.ap-southeast-1.amazonaws.com/hs-taskdef:latest",
             "portMappings": [
                 {
                     "containerPort": 3000,
