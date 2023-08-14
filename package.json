@@ -5,7 +5,7 @@
   "author": "Ivan Polovyi <polovyiivan@gmail.com>",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js"
+    "test": "jest"
   },
   "dependencies": {
     "express": "^4.17.1",

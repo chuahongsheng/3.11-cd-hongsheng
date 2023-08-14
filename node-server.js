@@ -97,4 +97,4 @@ function getPage(message) {
     + "</body>\n"
     + "</html>\n";
   return body;
-}
+} module.export =app;
